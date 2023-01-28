@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace SMS_2._0
+namespace SMS_2_0
 {
     public class MvcApplication : System.Web.HttpApplication
     {

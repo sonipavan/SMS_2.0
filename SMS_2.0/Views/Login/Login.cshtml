@@ -1,0 +1,31 @@
+﻿@model SMS_2_0.Models.SMS_Tbl_Login
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+</head>
+<body>
+    <div>
+        @using (Html.BeginForm(FormMethod.Post))
+        {
+            @Html.AntiForgeryToken()
+            <h1>Login FOrm</h1>
+            <h3>UserName</h3> 
+            <div>
+                @Html.TextBoxFor(m => m.Login_UserName)
+                        @Html.ValidationMessageFor(m => m.Login_UserName)
+                    </div>
+            <h3>Password</h3> @Html.TextBoxFor(m => m.User_Password)
+            @Html.ValidationMessageFor(m=>m.User_Password)
+
+            <input type="submit" value="submit" name="submit" />
+        }
+    </div>
+</body>
+</html>

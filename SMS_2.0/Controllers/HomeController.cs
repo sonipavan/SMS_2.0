@@ -6,6 +6,7 @@ using System.Web.Mvc;
 
 namespace SMS_2._0.Controllers
 {
+    [Authorize]
     public class HomeController : Controller
     {
         // GET: Home
