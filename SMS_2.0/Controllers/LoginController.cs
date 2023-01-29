@@ -25,11 +25,13 @@ namespace SMS_2_0.Controllers
             {
                 bool IsValidUser = SMS.SMS_Tbl_Login.
                     Any(u => u.Login_UserName.ToLower()
-                    == sMS.Login_UserName.ToLower());
+                    == sMS.Login_UserName.ToLower() && 
+                    sMS.User_Password == u.User_Password);
                 
                 if(IsValidUser)
                 {
                     FormsAuthentication.SetAuthCookie(sMS.Login_UserName, false);
+                    Session["UserName"] = sMS.Login_UserName;
                     return RedirectToAction("Index", "Home");
                 }
                 ModelState.AddModelError("", "Invalid user name or passworld");
@@ -37,6 +39,7 @@ namespace SMS_2_0.Controllers
             return View();
         
         }
+        [Authorize]
         public ActionResult Logout()
         {
             FormsAuthentication.SignOut();
