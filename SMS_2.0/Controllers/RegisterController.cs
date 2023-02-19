@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using SMS_OBJ.Ragister;
 
 namespace SMS_2.Controllers
 {
@@ -15,7 +16,7 @@ namespace SMS_2.Controllers
         }
 
         [HttpPost]
-        public ActionResult Register()
+        public ActionResult Register(Ragister_ ragister_)
         {
             return View();
         }
