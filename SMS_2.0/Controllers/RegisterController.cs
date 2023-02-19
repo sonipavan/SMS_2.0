@@ -13,5 +13,11 @@ namespace SMS_2.Controllers
         {
             return View();
         }
+
+        [HttpPost]
+        public ActionResult Register()
+        {
+            return View();
+        }
     }
 }
