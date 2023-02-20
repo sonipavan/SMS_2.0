@@ -18,9 +18,5 @@ namespace SMS_OBJ.Login_
         //[Required(ErrorMessage = "Please enter Password")]
         public string User_Password { get; set; }
 
-        public string Role_Name { get; set; }
-
-        public string Flag { get; set; }
-
     }
 }

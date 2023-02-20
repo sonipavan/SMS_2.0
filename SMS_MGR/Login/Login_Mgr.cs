@@ -17,10 +17,10 @@ namespace SMS_MGR.Login
             this.Login_DA = login_DA;
         }
 
-        Login_ ResultObject = new Login_();
-        public Login_ GetLogin(string username, string password)
+        List<Login_> ResultObject = new List<Login_>();
+        public List<Login_> GetLogin(string username, string password)
         {
-            Login_ data = Login_DA.Login(username, password);
+            List<Login_> data = Login_DA.Login(username, password);
            
             return data;
             
