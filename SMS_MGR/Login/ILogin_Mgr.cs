@@ -10,6 +10,6 @@ namespace SMS_MGR.Login
 {
     public interface ILogin_Mgr
     {
-        List<Login_> GetLogin(string username, string password);   
+        Login_ GetLogin(string username, string password);   
     }
 }

@@ -45,6 +45,13 @@
     <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
     <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
     <script src="~/Content/assets/js/config.js"></script>
+    <style>
+        .custom-validation-summary ul {
+            list-style-type: none;
+            color: red;
+            padding: 0;
+        }
+    </style>
 </head>
 
 <body>
@@ -79,7 +86,7 @@
                                            placeholder="Enter your email or username"
                                            autofocus />
                                 </div>*@
-                            @Html.ValidationSummary(true)
+                            @Html.ValidationSummary(true, "", new { @class = "custom-validation-summary" })
                             <div class="form-group form-primary">
                                 <label for="email" class="form-label">Username</label>
                                 @Html.TextBoxFor(m => m.Login_UserName, new { placeholder = "User Name", @class = "form-control" })

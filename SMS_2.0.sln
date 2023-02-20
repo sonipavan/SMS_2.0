@@ -5,6 +5,12 @@ VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS_2.0", "SMS_2.0\SMS_2.0.csproj", "{7AFDD510-9819-4106-9CF0-AFCCFDFDB3FA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS_MGR", "SMS_MGR\SMS_MGR.csproj", "{9F314ADC-B47D-4E31-B64E-D82C7F9B488A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS_DA", "SMS_DA\SMS_DA.csproj", "{BCE01C80-8788-4B04-AECF-193876FB4AB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS_OBJ", "SMS_OBJ\SMS_OBJ.csproj", "{C9E125AA-ECAF-44C3-9B3B-C693AA5F368F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,11 +21,24 @@ Global
 		{7AFDD510-9819-4106-9CF0-AFCCFDFDB3FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7AFDD510-9819-4106-9CF0-AFCCFDFDB3FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7AFDD510-9819-4106-9CF0-AFCCFDFDB3FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F314ADC-B47D-4E31-B64E-D82C7F9B488A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F314ADC-B47D-4E31-B64E-D82C7F9B488A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F314ADC-B47D-4E31-B64E-D82C7F9B488A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F314ADC-B47D-4E31-B64E-D82C7F9B488A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCE01C80-8788-4B04-AECF-193876FB4AB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCE01C80-8788-4B04-AECF-193876FB4AB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCE01C80-8788-4B04-AECF-193876FB4AB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCE01C80-8788-4B04-AECF-193876FB4AB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9E125AA-ECAF-44C3-9B3B-C693AA5F368F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9E125AA-ECAF-44C3-9B3B-C693AA5F368F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9E125AA-ECAF-44C3-9B3B-C693AA5F368F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9E125AA-ECAF-44C3-9B3B-C693AA5F368F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.Data.6.0.1304.0\lib\NET45
 		SolutionGuid = {F2834262-3611-42F9-B977-6E4072D998B7}
 	EndGlobalSection
 EndGlobal

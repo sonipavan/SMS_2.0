@@ -34,19 +34,17 @@ namespace SMS_2_0.Controllers
             {
                 if (ModelState.IsValid)
                 {
-                    int count = 0;
-                    List<Login_> data = Login_Mgr1.GetLogin(sMS.Login_UserName, sMS.User_Password);
-                    foreach (var item in data)
-                    {
-                        count = item.Login_Id;
-                    }
-                    if (count != 0)
+                    
+                    Login_ data = Login_Mgr1.GetLogin(sMS.Login_UserName, sMS.User_Password);
+                   
+                    if (data.Flag == "True")
                     {
 
-                        //FormsAuthentication.SetAuthCookie(sMS.Login_UserName, false);
-                        FormsAuthentication.SetAuthCookie("pavan", false);
-                        //Session["UserName"] = sMS.Login_UserName;
-                        Session["UserName"] = "pavan";
+                        FormsAuthentication.SetAuthCookie(data.Login_UserName, false);
+                        //FormsAuthentication.SetAuthCookie("pavan", false);
+                        Session["UserName"] = data.Login_UserName;
+                        //Session["UserName"] = "pavan";
+                        Session["Role"] = data.Role_Name;
                         return RedirectToAction("Index", "Home");
 
                     }

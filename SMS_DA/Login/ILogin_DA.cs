@@ -11,6 +11,6 @@ namespace SMS_DA.Login
     {
 
         //ResultObject<Login_> ResultObject1 = new ResultObject<Login_>();
-        List<Login_> Login(string username, string password);
+        Login_ Login(string username, string password);
     }
 }
