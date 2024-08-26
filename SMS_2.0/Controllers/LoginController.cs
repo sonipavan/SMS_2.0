@@ -34,7 +34,6 @@ namespace SMS_2_0.Controllers
             {
                 if (ModelState.IsValid)
                 {
-                    
                     Login_ data = Login_Mgr1.GetLogin(sMS.Login_UserName, sMS.User_Password);
                    
                     if (data.Flag == "True")
